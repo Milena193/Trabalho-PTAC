@@ -17,7 +17,7 @@ function App() {
     }
 
     const ideia = {
-      id: Date.now(),
+      id: ideia.length + 1,
       texto: texto,
       feita: false,
     };
