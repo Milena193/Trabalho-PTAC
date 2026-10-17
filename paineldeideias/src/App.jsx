@@ -23,5 +23,18 @@ import "./index.css";
     setNovaIdeia("");
     setErro("");
   }
+  function alternar(id){
+    setIdeias((atual)=>{
+      return atual.map((ideia)=>{
+        if(ideia.id==id){
+          return{
+            ...ideia,
+            feita: !ideia.feita
+          };
+        }
+        return ideia
+      })
+    })
+  }
   
  }
